@@ -1,0 +1,12 @@
+[Unit]
+Description=Weekly update of the root hints of unbound
+
+[Timer]
+OnCalendar=weekly
+Unit=unbound-root-hints-updater.service
+Persistent=true
+AccuracySec=24h
+
+[Install]
+WantedBy=timers.target
+

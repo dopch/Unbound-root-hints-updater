@@ -1,0 +1,10 @@
+[Unit]
+Description=Update of root hints of unbound
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/opt/unbound-updater/
+ExecStart=/usr/bin/bash /opt/unbound-updater/update-unbound-root-hints.sh
+
+
